@@ -1,0 +1,71 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  width: 90%;
+  min-height: 300px;
+  padding: 20px;
+  margin: auto;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  justify-content: space-evenly;
+  flex-flow: column nowrap;
+  background-color: rgb(255, 255, 255);/* Fallback color */
+  background-color: rgba(255, 255, 255, 0.5);  /* Black w/opacity/see-through */
+}
+
+.winner-prediction,
+.match,
+.score-prediction,
+.goalscorer-prediction {
+  padding: 5px;
+  margin: 5px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.background {
+  background-image: url('/img/wallpaper.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: #56baed;
+}
+
+.select-match,
+.prediction {
+  display: flex;
+  flex-basis: 90%;
+  justify-content: center;
+  text-align: center;
+}
+
+.outer-select-match {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column nowrap;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);/* Fallback color */
+  background-color: rgba(255, 255, 255, 0.8);  /* Black w/opacity/see-through */
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.select-match {
+  flex-flow: row wrap;
+}
+
+.prediction {
+  flex-flow: column nowrap;
+  background-color: rgb(255, 255, 255);/* Fallback color */
+  background-color: rgba(255, 255, 255, 0.8);  /* Black w/opacity/see-through */
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+}

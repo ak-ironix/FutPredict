@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUTpredict</title>
+    <link rel="stylesheet" href="/css/startup.css">
+</head>
+<body class="background">
+    <div class="wrapper fadeInDown">
+
+        <!-- LOG IN FORM -->
+        <div id="formContent" class="formContent">
+          <!-- Tabs Titles -->
+          <button class="tablinks active" onclick="switchTab(event, 'login')"> Log In </button>
+          <button class="tablinks inactive underlineHover" onclick="switchTab(event, 'signup')"> Sign Up </button>
+      
+          <div id="login" class="formBoxes">
+            <!-- Icon -->
+            <div class="fadeIn first">
+              <img src="/img/icon.png" id="icon" class="icon"alt="Icon" />
+            </div>
+            <!-- Login Form -->
+            <form method="POST">
+              <input type="text" id="loginUsername" class="fadeIn second" name="loginuser" placeholder="username" required>
+              <input type="password" id="loginPassword" class="fadeIn third" name="loginpwd" placeholder="password" required>
+              <input type="submit" class="fadeIn fourth" value="Log In">
+            </form>
+    
+            <!-- Forgot Password -->
+            <div id="formFooter">
+              <a class="underlineHover" href="#">Forgot Password?</a>
+            </div>
+          </div>
+    
+          <div id="signup" class="formBoxes">
+            <!-- Icon -->
+            <div class="fadeIn first">
+              <img src="/img/icon.png" id="icon" class="icon" alt="Icon" />
+            </div>
+        
+            <!-- Sign up Form -->
+            <form method="POST">
+              <input type="text" id="name" class="fadeIn second" name="signupname" placeholder="name" required>
+              <input type="text" id="signupUsername" class="fadeIn second" name="signupuser" placeholder="username" required>
+              <input type="password" id="signupPassword" class="fadeIn third" name="signuppwd" placeholder="password" required>
+              <input type="submit" class="fadeIn fourth" value="Sign up">
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    
+      <script>
+        function switchTab(evt, boxName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("formBoxes");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", " inactive underlineHover");
+          }
+          document.getElementById(boxName).style.display = "inline-block";
+          evt.currentTarget.className = evt.currentTarget.className.replace(" inactive underlineHover", " active");
+        }
+        </script>
+</body>
+</html>

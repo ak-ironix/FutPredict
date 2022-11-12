@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<!-- 
+
+---try next---
+add profile bar fixed at top (from page templates)
+take navbar out of wrapper and make it fixed to top with profile bar
+fix size of wrapper div and work with inner contents accordingly (refer to login wrapper)
+
+ -->
+<body class="background">
+    <h1>dashboard</h1>
+    <div class="navbar">
+        <ul>
+            <a href="/dashboard"><li>Home</li></a>
+            <a href="/make-prediction"><li>Make Your Prediction</li></a>
+            <a href="/fixtures-results"><li>Fixtures/Results</li></a>
+            <a href="/leaderboard"><li>Leaderboard</li></a>
+            <a href="/"><li>Logout</li></a>
+        </ul>
+    </div>
+
+    <div class="wrapper">
+        <div class="prediction-status">
+            Match 1
+            <div class="prediction">
+                O - A winner B - O<br>
+            </div>
+            <div class="prediction">
+                A - O score O - B<br>
+            </div>
+            <div class="prediction">
+                select goalscorer <br>
+            </div>
+        </div>
+        <div class="matches-today">
+            today
+            <div class="match">
+                Match 1 <br>
+                team vs team <br>
+                2 - 0 <br>
+                ----goalscorers---- <br>
+            </div>
+            <div class="match">
+                Match 2 <br>
+                team vs team <br>
+                1 - 1 <br>
+                ----goalscorers---- <br>
+            </div>
+            <div class="match">
+                Match 3 <br>
+                team vs team <br>
+                0 - 2 <br>
+                ----goalscorers---- <br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

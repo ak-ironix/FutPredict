@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="/css/leaderboard.css">
+</head>
+
+<body class="background">
+    <h1>leaderboard</h1>
+    <div class="navbar">
+        <ul>
+            <a href="/dashboard">
+                <li>Home</li>
+            </a>
+            <a href="/make-prediction">
+                <li>Make Your Prediction</li>
+            </a>
+            <a href="/fixtures-results">
+                <li>Fixtures/Results</li>
+            </a>
+            <a href="/leaderboard">
+                <li>Leaderboard</li>
+            </a>
+            <a href="/">
+                <li>Logout</li>
+            </a>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div class="leaderboard">
+
+            <li class="table-header">
+                <div class="col-1">Position</div>
+                <div class="col-2">Name</div>
+                <div class="col-3">Username</div>
+                <div class="col-4">Tokens</div>
+            </li>
+
+            <% if(data.length>0){
+                data.forEach(function(value){
+                %>
+
+                <li class="table-row">
+                    <div class="col-1"><%= value.position %></div>
+                    <div class="col-2"><%= value.name %></div>
+                    <div class="col-3"><%= value.username %></div>
+                    <div class="col-4"><%= value.tokens %></div>
+                </li>
+
+                <li class="table-row">
+                    <div class="col-1"><%= value.position %></div>
+                    <div class="col-2"><%= value.name %></div>
+                    <div class="col-3"><%= value.username %></div>
+                    <div class="col-4"><%= value.tokens %></div>
+                </li>
+                <%
+            });
+            }
+            else{
+                %>
+                    <li>DATA IS MISSING</li>
+                <% } %>
+
+                <% if(data.length>0){
+                data.forEach(function(value){
+                %>
+
+                <li class="table-row">
+                    <div class="col-1"><%= value.position %></div>
+                    <div class="col-2"><%= value.name %></div>
+                    <div class="col-3"><%= value.username %></div>
+                    <div class="col-4"><%= value.tokens %></div>
+                </li>
+
+                <li class="table-row">
+                    <div class="col-1"><%= value.position %></div>
+                    <div class="col-2"><%= value.name %></div>
+                    <div class="col-3"><%= value.username %></div>
+                    <div class="col-4"><%= value.tokens %></div>
+                </li>
+                <%
+            });
+            }
+            else{
+                %>
+                    <li>DATA IS MISSING</li>
+                <% } %>
+
+        </div>
+        <div class="single-table">
+            <div class="self-position">
+                <h1>your position</h1>
+                <li class="table-row">
+                    <div class="col col-01"><%= data[0].name %></div>
+                    <div class="col col-02">POSITION<br><%= data[0].position %></div><br>
+                    <div class="col col-01"><%= data[0].username %></div>
+                    <div class="col col-02">TOKENS<br><%= data[0].tokens %></div>
+                </li>
+            </div>
+            <div class="search">
+                <h1>search</h1>
+                <li class="table-row">
+                    <div class="col col-01"><%= data[0].name %></div>
+                    <div class="col col-02">POSITION<br><%= data[0].position %></div><br>
+                    <div class="col col-01"><%= data[0].username %></div>
+                    <div class="col col-02">TOKENS<br><%= data[0].tokens %></div>
+                </li>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

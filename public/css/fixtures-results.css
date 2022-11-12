@@ -1,0 +1,45 @@
+.wrapper {
+  display: flex;
+  width: 90%;
+  border-radius: 10px 10px 10px 10px;
+  min-height: 300px;
+  padding-top: 20px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(255, 255, 255); /* Fallback color */
+  background-color: rgba(255, 255, 255, 0.5); /* Black w/opacity/see-through */
+}
+
+.background {
+  background-image: url('/img/wallpaper.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: #56baed;
+}
+
+.matches {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255); /* Fallback color */
+  background-color: rgba(255, 255, 255, 0.8); /* Black w/opacity/see-through */
+  border-radius: 10px 10px 10px 10px;
+  max-height: 550px;
+  width: 90%;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.match {
+  margin: 5px 0px 5px 0px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  /* height: 90%; */
+  width: 70%;
+  text-align: center;
+  -webkit-box-pxshadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+}
